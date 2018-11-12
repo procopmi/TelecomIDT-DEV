@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <description>Send Invoice</description>
+        <event_name>x_sehau_telecom_id.invoice.closed</event_name>
+        <fired_by>Invoice Closed Business Rule</fired_by>
+        <queue/>
+        <suffix>invoice.closed</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>procopmi</sys_created_by>
+        <sys_created_on>2018-08-23 15:50:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>f4a624ea13ccab0033d556022244b06b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sehau_telecom_id.invoice.closed</sys_name>
+        <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+        <sys_update_name>sysevent_register_f4a624ea13ccab0033d556022244b06b</sys_update_name>
+        <sys_updated_by>procopmi</sys_updated_by>
+        <sys_updated_on>2018-08-23 15:50:34</sys_updated_on>
+        <table>x_sehau_telecom_id_idt_invoice</table>
+    </sysevent_register>
+</record_update>

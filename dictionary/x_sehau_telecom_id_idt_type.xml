@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="IDT Type" max_length="40" name="x_sehau_telecom_id_idt_type" type="collection">
+        <element display="true" label="IDT Category" mandatory="true" max_length="40" name="u_idt_category" type="string"/>
+    </element>
+</database>

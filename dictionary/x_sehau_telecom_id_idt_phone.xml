@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="IDT Phone" max_length="40" name="x_sehau_telecom_id_idt_phone" type="collection">
+        <element label="Assigned To" max_length="32" name="u_assigned_to" reference="x_sehau_telecom_id_idt_user" type="reference"/>
+        <element label="Budget" max_length="32" name="u_idt_budget" reference="x_sehau_telecom_id_idt_budget" type="reference"/>
+        <element label="Category" mandatory="true" max_length="32" name="u_idt_category" reference="x_sehau_telecom_id_idt_type" type="reference"/>
+        <element attributes="pn_display_territory_text=all,&#13;&#10;pn_display_territory_selector=false,&#13;&#10;pn_display_national=all,&#13;&#10;pn_allow_national_entry" display="true" hint="Phone numbers must include country code. (ie: 1-973-555-1234)" label="Phone Number" mandatory="true" max_length="40" name="u_phone_number" type="phone_number_e164"/>
+        <element label="Retired" max_length="40" name="u_retired" type="boolean"/>
+        <index name="index">
+            <element name="u_assigned_to"/>
+        </index>
+        <index name="index2">
+            <element name="u_idt_category"/>
+        </index>
+        <index name="index3">
+            <element name="u_idt_budget"/>
+        </index>
+    </element>
+</database>

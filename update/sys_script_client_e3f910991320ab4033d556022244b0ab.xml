@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Set Bill Date to MM/YYYY of Invoice Date</description>
+        <field>u_invoice_date</field>
+        <global>false</global>
+        <messages/>
+        <name>IDT Set Bill Date</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	//Type appropriate comment here, and begin script below
+	var ga = new GlideAjax('x_sehau_telecom_id.IDTUtils');
+	ga.addParam('sysparm_name','setBillDate');
+	ga.addParam('sysparm_invoice_date',g_form.getValue('u_invoice_date'));
+	ga.getXML(setBillDateParse);
+	
+	var userAnswer = ga.getAnswer();
+}
+
+function setBillDateParse(response) {
+
+	var myReturn = response.responseXML.documentElement.getAttribute("answer");
+
+	if (myReturn != null) {
+		g_form.setValue('u_bill_date', myReturn);
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>procopmi</sys_created_by>
+        <sys_created_on>2018-09-13 14:17:38</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>e3f910991320ab4033d556022244b0ab</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>IDT Set Bill Date</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+        <sys_update_name>sys_script_client_e3f910991320ab4033d556022244b0ab</sys_update_name>
+        <sys_updated_by>procopmi</sys_updated_by>
+        <sys_updated_on>2018-09-14 18:43:36</sys_updated_on>
+        <table>x_sehau_telecom_id_idt_invoice</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

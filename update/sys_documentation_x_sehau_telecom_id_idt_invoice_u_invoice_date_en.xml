@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_invoice_date" label="Invoice Date" language="en" table="x_sehau_telecom_id_idt_invoice">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_invoice_date</element>
+            <help/>
+            <hint/>
+            <label>Invoice Date</label>
+            <language>en</language>
+            <name>x_sehau_telecom_id_idt_invoice</name>
+            <plural>Invoice Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-06-11 14:26:44</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>3c9754c313aed300147f5f722244b069</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Invoice Date</sys_name>
+            <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+            <sys_update_name>sys_documentation_x_sehau_telecom_id_idt_invoice_u_invoice_date_en</sys_update_name>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-06-11 14:26:44</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_idt_status" table="x_sehau_telecom_id_idt_invoice" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_idt_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Open</label>
+            <language>en</language>
+            <name>x_sehau_telecom_id_idt_invoice</name>
+            <sequence>0</sequence>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-09-14 14:25:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>af3621a5132cab4033d556022244b0d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-09-14 14:25:08</sys_updated_on>
+            <value>open</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_idt_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Reviewed</label>
+            <language>en</language>
+            <name>x_sehau_telecom_id_idt_invoice</name>
+            <sequence>1</sequence>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-09-14 14:25:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>633621a5132cab4033d556022244b0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-09-14 14:25:08</sys_updated_on>
+            <value>reviewed</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_idt_status</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed</label>
+            <language>en</language>
+            <name>x_sehau_telecom_id_idt_invoice</name>
+            <sequence>2</sequence>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-09-14 14:25:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_id>ef3621a5132cab4033d556022244b0d5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-09-14 14:25:08</sys_updated_on>
+            <value>closed</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_idt_status</element>
+            <name>x_sehau_telecom_id_idt_invoice</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-09-14 14:25:08</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>2f3621a5132cab4033d556022244b0d4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_idt_status</sys_name>
+            <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+            <sys_update_name>sys_choice_x_sehau_telecom_id_idt_invoice_u_idt_status</sys_update_name>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-09-14 14:25:08</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

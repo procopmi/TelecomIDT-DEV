@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_user_role">
+    <sys_user_role action="INSERT_OR_UPDATE">
+        <assignable_by/>
+        <can_delegate>true</can_delegate>
+        <description/>
+        <elevated_privilege>false</elevated_privilege>
+        <encryption_context/>
+        <grantable>true</grantable>
+        <includes_roles/>
+        <name>x_sehau_telecom_id.idt_user_user</name>
+        <scoped_admin>false</scoped_admin>
+        <suffix>idt_user_user</suffix>
+        <sys_class_name>sys_user_role</sys_class_name>
+        <sys_created_by>procopmi</sys_created_by>
+        <sys_created_on>2018-06-11 14:18:16</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>7ca5144313aed300147f5f722244b0c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_sehau_telecom_id.idt_user_user</sys_name>
+        <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+        <sys_update_name>sys_user_role_7ca5144313aed300147f5f722244b0c4</sys_update_name>
+        <sys_updated_by>procopmi</sys_updated_by>
+        <sys_updated_on>2018-06-11 14:18:16</sys_updated_on>
+    </sys_user_role>
+</record_update>

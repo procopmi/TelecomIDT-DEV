@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>true</disabled>
+        <field>u_name.u_name.phone</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>procopmi</sys_created_by>
+        <sys_created_on>2018-06-13 14:14:58</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0508aa2b1326570033d556022244b014</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_name.u_name.phone</sys_name>
+        <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+        <sys_update_name>sys_ui_policy_action_0508aa2b1326570033d556022244b014</sys_update_name>
+        <sys_updated_by>procopmi</sys_updated_by>
+        <sys_updated_on>2018-06-13 14:14:58</sys_updated_on>
+        <table>x_sehau_telecom_id_idt_invoice</table>
+        <ui_policy display_value="Make Fields Read Only">43252ea71326570033d556022244b007</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>

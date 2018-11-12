@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_sehau_telecom_id.IDTUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>IDTUtils</name>
+        <script><![CDATA[var IDTUtils = Class.create();
+IDTUtils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getBudgetCodeAjax:function(){
+		var idtPhone = this.getParameter('sysparm_phone_id');
+		var returnData = '';
+		gs.info('PROCOPMI: returnData: '+idtPhone);
+
+		var grPhone = new GlideRecord('x_sehau_telecom_id_idt_phone');
+		grPhone.addQuery('sys_id', idtPhone);
+		grPhone.query();
+		if (grPhone.next()) {
+			returnData = grPhone.u_idt_budget;
+		}
+		gs.info('PROCOPMI: returnData: '+returnData);
+		return returnData;
+	},
+
+	getIdtInfoAjax:function(){
+		var idtName = this.getParameter('sysparm_name_id');
+		//var idtInvoiceDate = this.getParameter('sysparm_invoice_date');
+
+		var returnData = '';
+
+		gs.info('PROCOPMI - IDT Name: '+idtName);
+
+		var grIdtUser = new GlideRecord('x_sehau_telecom_id_idt_user');
+		grIdtUser.addQuery('sys_id', idtName);
+		grIdtUser.query();
+		if (grIdtUser.next()) {
+			returnData = grIdtUser.u_supervisor + '|';
+		}
+
+		var grIdtPhone = new GlideRecord('x_sehau_telecom_id_idt_phone');
+		grIdtPhone.addQuery('u_assigned_to', idtName);
+		grIdtPhone.query();
+
+		if (grIdtPhone.next())
+		{
+			gs.info('PROCOPMI - Phone Number: ' + grIdtPhone.u_phone_number);
+
+			returnData = returnData + grIdtPhone.sys_id + '|';
+			returnData = returnData + grIdtPhone.u_idt_budget + '|';
+			returnData = returnData + grIdtPhone.u_idt_category;
+			//			returnData = returnData + grIdtPhone.u_idt_category + '|';
+		}
+
+		//var dateArr = idtInvoiceDate.split('-');
+		//var billDate = dateArr[1]+'/'+dateArr[0];
+		//returnData = returnData + billDate;
+		gs.info('PROCOPMI: returnData: '+returnData);
+
+		return returnData;	
+	},
+
+	setBillDate:function(){
+		//var idtName = this.getParameter('sysparm_name_id');
+		var idtInvoiceDate = this.getParameter('sysparm_invoice_date');
+		gs.info('PROCOPMI: setBillDate(): idtInvoiceDate = ', idtInvoiceDate);
+		var dateArr = idtInvoiceDate.split('-');
+		var billDate = dateArr[1]+'/'+dateArr[0];
+
+		return billDate;
+	},
+
+	type: 'IDTUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>procopmi</sys_created_by>
+        <sys_created_on>2018-09-10 16:29:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>0593111813242b40147f5f722244b007</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>IDTUtils</sys_name>
+        <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+        <sys_update_name>sys_script_include_0593111813242b40147f5f722244b007</sys_update_name>
+        <sys_updated_by>procopmi</sys_updated_by>
+        <sys_updated_on>2018-09-24 18:41:08</sys_updated_on>
+    </sys_script_include>
+</record_update>

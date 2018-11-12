@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="INSERT_OR_UPDATE">
+        <group_id display_value="Telecom" name="Telecom">7a68191ffc9ae00019440413407e54da</group_id>
+        <report_id display_value="IDT Invoices - OPEN">769fc5c713c39740147f5f722244b09b</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>procopmi</sys_created_by>
+        <sys_created_on>2018-09-24 19:35:45</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>833d8af01378a380147f5f722244b08c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>769fc5c713c39740147f5f722244b09b</sys_name>
+        <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+        <sys_update_name>sys_report_users_groups_833d8af01378a380147f5f722244b08c</sys_update_name>
+        <sys_updated_by>procopmi</sys_updated_by>
+        <sys_updated_on>2018-09-24 19:35:45</sys_updated_on>
+        <user_id/>
+    </sys_report_users_groups>
+</record_update>

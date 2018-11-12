@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_label/>
+        <action_name/>
+        <action_query>false</action_query>
+        <action_run_at>server</action_run_at>
+        <action_update>true</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <application/>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_sehau_telecom_id_idt_invoice</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>IDT Set Budget Code</name>
+        <onclick/>
+        <order>100</order>
+        <priority>100</priority>
+        <read_access_action>false</read_access_action>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[setIDTBudget();
+
+function setIDTBudget() {
+	var idtPhone = new GlideRecord('x_sehau_telecom_id_idt_phone');
+	idtPhone.addQuery('sys_id',current.u_idt_phone);
+	idtPhone.query();
+	
+	if(idtPhone.next()) {
+		var phoneBudget = idtPhone.u_idt_budget;
+		//gs.info("IDT: Phone Budget = "+phoneBudget);
+		
+		current.u_idt_budget = phoneBudget;
+	}
+	
+
+}
+
+//(function executeRule(current, previous /*null when async*/) {
+//
+	// Add your code here
+//	try {
+//		if (!current.u_idt_budget.u_budget_acct.nil()) {
+//			
+//		}
+//	}
+//	catch(err) {
+//		gs.log("PROCOPMI: Runtime error: "+err);
+//	}
+//})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>procopmi</sys_created_by>
+        <sys_created_on>2018-06-11 20:02:13</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>d441214b13eed30033d556022244b037</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>IDT Set Budget Code</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+        <sys_update_name>sys_script_d441214b13eed30033d556022244b037</sys_update_name>
+        <sys_updated_by>procopmi</sys_updated_by>
+        <sys_updated_on>2018-08-28 18:23:51</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+</record_update>

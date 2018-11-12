@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="IDT Budget" max_length="40" name="x_sehau_telecom_id_idt_budget" type="collection">
+        <element display="true" label="Budget Account" mandatory="true" max_length="100" name="u_budget_acct" type="string"/>
+        <element label="Budget Manager" max_length="32" name="u_budget_mgr" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_budget_mgr"/>
+        </index>
+    </element>
+</database>

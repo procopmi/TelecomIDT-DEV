@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="IDT User" max_length="40" name="x_sehau_telecom_id_idt_user" type="collection">
+        <element display="true" label="Name" mandatory="true" max_length="32" name="u_name" reference="sys_user" type="reference"/>
+        <element label="Supervisor" max_length="32" name="u_supervisor" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_name"/>
+        </index>
+        <index name="index2">
+            <element name="u_supervisor"/>
+        </index>
+    </element>
+</database>

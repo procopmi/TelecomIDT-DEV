@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_sehau_telecom_id_idt_invoice</collection>
+        <email_layout display_value="Unsubscribe and Preferences">1410041f3b0b2200c869c2c703efc41e</email_layout>
+        <message/>
+        <message_html><![CDATA[<h2 style="text-align: center;">Seton Hall University</h2>
+<h3 style="text-align: center;">Inter-Departmental Transfer Requisition and Invoice</h3>
+<hr />
+<h3 style="text-align: center;">DEBIT INFORMATION</h3>
+<table style="width: 650px;" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td width="50%"><strong>Name:</strong> ${u_name}</td>
+<td width="50%"><strong>Category:</strong> ${u_idt_category}</td>
+</tr>
+<tr>
+<td width="50%"><strong>Department:</strong> ${u_name.u_name.u_department}</td>
+<td width="50%"><strong>Details:</strong> ${u_details}</td>
+</tr>
+<tr>
+<td width="50%"><strong>School/Division:</strong> ${u_name.u_name.u_school_division}</td>
+<td width="50%"><strong>Invoice Date:</strong> ${u_invoice_date}</td>
+</tr>
+<tr>
+<td width="50%"><strong>Supervisor:</strong> ${u_name.u_supervisor}</td>
+<td width="50%"><strong>Bill Date:</strong> ${u_bill_date}</td>
+</tr>
+<tr>
+<td width="50%"><strong>Phone Extension:</strong> ${u_name.u_name.phone}</td>
+<td width="50%"><strong>Phone Number:</strong> ${u_idt_phone}</td>
+</tr>
+<tr>
+<td width="50%"><strong>Building:</strong> ${u_name.u_name.building}</td>
+<td width="50%"><strong>Budget Manager:</strong> ${u_idt_budget.u_budget_mgr}</td>
+</tr>
+<tr>
+<td width="50%"><strong>Email:</strong> ${u_name.u_name.email}</td>
+<td width="50%"><strong>Budget Account:</strong> ${u_idt_budget.u_budget_acct}</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>Comments:</strong> ${u_comments}</p>
+<hr />
+<h3 style="text-align: center;">CREDIT INFORMATION</h3>
+<table style="width: 650px;" cellspacing="5" cellpadding="5">
+<tbody>
+<tr>
+<td width="50%"><strong>Invoice Number:</strong> ${number}</td>
+<td width="50%"><strong>Total:</strong> ${u_invoice_total}</td>
+</tr>
+</tbody>
+</table>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>invoice.idt.closed</name>
+        <sms_alternate/>
+        <subject>SHU Cell Phone Invoice for ${u_name} - ${u_bill_date}</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>procopmi</sys_created_by>
+        <sys_created_on>2018-08-24 19:23:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d660a676134ceb0033d556022244b0de</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>invoice.idt.closed</sys_name>
+        <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+        <sys_update_name>sysevent_email_template_d660a676134ceb0033d556022244b0de</sys_update_name>
+        <sys_updated_by>procopmi</sys_updated_by>
+        <sys_updated_on>2018-09-25 16:16:13</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

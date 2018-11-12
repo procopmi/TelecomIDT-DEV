@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>performance-analytics</category>
+        <content><![CDATA[ <h1 class="title topictitle1">Create an indicator</h1>  <div class="body taskbody">   <div class="section context">  <p class="p">Indicators <span class="ph">define a performance              measurement taken at regular intervals of a business service, an activity, or              organizational behavior. These performance measurements result in a series of                indicator scores over time.</span></p>      <dl class="dl"><dt class="dt dlterm">Automated Indicators</dt><dd class="dd"><span class="ph">An automated indicator is based on an indicator source.            The indicator source specifies a table and a frequency at which scores from this table            are saved. After you select the indicator source and specify other properties, choose            scheduled jobs to collect data for the indicator.</span> For more information, see <a class="xref" href="https://docs.servicenow.com/?context&#61;CSHelp:SettingU_Indicators_Creating_Indicators" target="_blank">Create an automated indicator</a></dd><dt class="dt dlterm">Manual Indicators</dt><dd class="dd"><span class="ph">Manual indicators are not associated with an indicator            source. Scores for manual indicators are not generated automatically by a data            collection job. Instead, populate these indicators by adding scores manually or by            importing data.</span>            <span class="ph">Manual indicators are typically              used for data that cannot be retrieved from the <span class="ph">ServiceNow</span> instance because it              comes from an outside system, such as customer data from a third-party sales              system.</span> For more information, see <a class="xref" href="https://docs.servicenow.com/?context&#61;CSHelp:t_CreateAManualIndicator" target="_blank">Create a manual indicator</a></dd><dt class="dt dlterm">Formula Indicators</dt><dd class="dd"><span class="ph">Create a formula indicator to use the historic data of            other indicators and analytical functions to produce a computed score.</span> For more information, see <a class="xref" href="https://docs.servicenow.com/?context&#61;CSHelp:Performance-Analytics-Formula-Indicator-Time-Series" target="_blank">Create a formula indicator</a></dd></dl></div> </div>]]></content>
+        <last_sync>2018-11-09 15:35:06</last_sync>
+        <modifier>normal</modifier>
+        <name>pa_indicators-normal</name>
+        <page>pa_indicators</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-07-12 15:29:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cd2f8009131b9b40147f5f722244b04a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>pa_indicators-normal</sys_name>
+        <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+        <sys_update_name>sys_embedded_help_content_cd2f8009131b9b40147f5f722244b04a</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-11-09 15:35:06</sys_updated_on>
+        <version>k</version>
+    </sys_embedded_help_content>
+</record_update>

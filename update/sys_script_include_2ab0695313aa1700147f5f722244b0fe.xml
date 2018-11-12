@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_sehau_telecom_id.GetBudgetCodeAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Retrieve &amp; populate budget code associated with a phone number</description>
+        <name>GetBudgetCodeAjax</name>
+        <script><![CDATA[var GetBudgetCodeAjax = Class.create();
+
+GetBudgetCodeAjax.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	getData:function() {
+		var idtPhone = this.getParameter('sysparm_phone_id');
+		var returnData = '';
+		gs.info('PROCOPMI: returnData: '+idtPhone);
+
+		var grPhone = new GlideRecord('x_sehau_telecom_id_idt_phone');
+		grPhone.addQuery('sys_id', idtPhone);
+		grPhone.query();
+		if (grPhone.next()) {
+			returnData = grPhone.u_idt_budget;
+		}
+		gs.info('PROCOPMI: returnData: '+returnData);
+		return returnData;
+	},
+
+	type: 'GetBudgetCodeAjax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>procopmi</sys_created_by>
+        <sys_created_on>2018-06-12 18:18:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2ab0695313aa1700147f5f722244b0fe</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>GetBudgetCodeAjax</sys_name>
+        <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+        <sys_update_name>sys_script_include_2ab0695313aa1700147f5f722244b0fe</sys_update_name>
+        <sys_updated_by>procopmi</sys_updated_by>
+        <sys_updated_on>2018-06-13 17:33:05</sys_updated_on>
+    </sys_script_include>
+</record_update>

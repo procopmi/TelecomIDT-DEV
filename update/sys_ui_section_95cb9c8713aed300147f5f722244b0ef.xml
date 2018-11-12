@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="95cb9c8713aed300147f5f722244b0ef" sys_domain="global" table="x_sehau_telecom_id_idt_phone" version="3" view="">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-06-11 17:45:54</sys_created_on>
+            <sys_id>9a25410313221700147f5f722244b07c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-06-11 17:45:54</sys_updated_on>
+            <text>Phone numbers must include country code (i.e. 1-973-555-1234)</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>9a25410313221700147f5f722244b07c</element>
+            <position>0</position>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-06-11 17:45:54</sys_created_on>
+            <sys_id>5e25410313221700147f5f722244b07c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sehau_telecom_id_idt_phone" sys_domain="global" view="Default view">95cb9c8713aed300147f5f722244b0ef</sys_ui_section>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-06-11 17:45:54</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_phone_number</element>
+            <position>1</position>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-06-11 17:45:54</sys_created_on>
+            <sys_id>de25410313221700147f5f722244b07c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sehau_telecom_id_idt_phone" sys_domain="global" view="Default view">95cb9c8713aed300147f5f722244b0ef</sys_ui_section>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-06-11 17:45:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_idt_category</element>
+            <position>2</position>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-06-11 17:45:54</sys_created_on>
+            <sys_id>5225410313221700147f5f722244b07d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sehau_telecom_id_idt_phone" sys_domain="global" view="Default view">95cb9c8713aed300147f5f722244b0ef</sys_ui_section>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-06-11 17:45:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-06-11 17:45:54</sys_created_on>
+            <sys_id>d225410313221700147f5f722244b07d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sehau_telecom_id_idt_phone" sys_domain="global" view="Default view">95cb9c8713aed300147f5f722244b0ef</sys_ui_section>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-06-11 17:45:54</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_assigned_to</element>
+            <position>4</position>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-06-11 17:45:54</sys_created_on>
+            <sys_id>5625410313221700147f5f722244b07d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sehau_telecom_id_idt_phone" sys_domain="global" view="Default view">95cb9c8713aed300147f5f722244b0ef</sys_ui_section>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-06-11 17:45:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_idt_budget</element>
+            <position>5</position>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-06-11 17:45:54</sys_created_on>
+            <sys_id>d625410313221700147f5f722244b07d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sehau_telecom_id_idt_phone" sys_domain="global" view="Default view">95cb9c8713aed300147f5f722244b0ef</sys_ui_section>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-06-11 17:45:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_idt_budget.u_budget_mgr</element>
+            <position>6</position>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-06-11 17:45:54</sys_created_on>
+            <sys_id>5a25410313221700147f5f722244b07d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sehau_telecom_id_idt_phone" sys_domain="global" view="Default view">95cb9c8713aed300147f5f722244b0ef</sys_ui_section>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-06-11 17:45:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_retired</element>
+            <position>7</position>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-07-10 15:44:04</sys_created_on>
+            <sys_id>946fbd1413135b40147f5f722244b0a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_sehau_telecom_id_idt_phone" sys_domain="global" view="Default view">95cb9c8713aed300147f5f722244b0ef</sys_ui_section>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-07-10 15:44:04</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_sehau_telecom_id_idt_phone</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>procopmi</sys_created_by>
+            <sys_created_on>2018-06-11 14:45:04</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_id>95cb9c8713aed300147f5f722244b0ef</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_sehau_telecom_id_idt_phone</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Telecom IDT" source="x_sehau_telecom_id">5c74d0cf136ed300147f5f722244b097</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Telecom IDT">5c74d0cf136ed300147f5f722244b097</sys_scope>
+            <sys_update_name>sys_ui_section_95cb9c8713aed300147f5f722244b0ef</sys_update_name>
+            <sys_updated_by>procopmi</sys_updated_by>
+            <sys_updated_on>2018-06-11 14:45:04</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>
